@@ -6,7 +6,7 @@ eureka:
   instance:
     hostname: localhost
     lease-renewal-interval-in-seconds: 10
-    lease-expiration-duration-in-seconds: 30
+    lease-expiration-duration-in-seconds: 90
 
 
   client:
@@ -14,3 +14,4 @@ eureka:
     fetch-registry: false
     refresh:
       enable: true
+
