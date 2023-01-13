@@ -1,8 +1,8 @@
 server:
   port: 8761
 eureka:
-  # instance:
-  #   hostname: localhost
+  instance:
+    hostname: peer1
   client:
     register-with-eureka: false
     fetch-registry: false
