@@ -1,13 +1,16 @@
 server:
-  port: 8761
+  port: 9092
+#  servlet:
+#    context-path: /registry-server
 eureka:
   instance:
-    hostname: peer1
+    hostname: localhost
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 30
+
+
   client:
     register-with-eureka: false
     fetch-registry: false
-    registry-fetch-interval-seconds: 30
     refresh:
       enable: true
-    service-url:
-      defaultZone: http://peer1/eureka/
